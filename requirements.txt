@@ -1,0 +1,45 @@
+# Core Dependencies
+pandas==1.5.3
+numpy==1.24.4
+matplotlib==3.7.2
+
+# Binance API
+python-binance==1.0.16
+
+# Database
+psycopg2-binary==2.9.7
+
+# Scheduler
+APScheduler==3.10.4
+
+# Email
+smtplib3==1.0.2
+email-validator==2.0.0.post2
+
+# Logging
+loguru==0.7.0
+
+# Environment Variables
+python-dotenv==1.0.0
+
+# Web Framework (Django)
+Django==4.2.5
+
+# For parsing YAML configuration files (if used)
+PyYAML==6.0.1
+
+# For REST API (optional)
+djangorestframework==3.14.0
+
+# Type Checking (optional)
+mypy==1.5.1
+
+# Linting and Formatting (optional)
+flake8==6.1.0
+black==23.9.1
+
+# Testing (optional)
+pytest==7.4.2
+
+# For handling CORS (if needed in API)
+django-cors-headers==4.2.0

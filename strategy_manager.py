@@ -16,3 +16,28 @@ class StrategyManager:
 
     def get_strategies(self):
         return self.strategies
+
+    def enable_strategy(self, strategy_name):
+        for strategy in self.strategies:
+            if strategy.get_name() == strategy_name:
+                strategy.enable()
+                return True
+        return False
+
+    def disable_strategy(self, strategy_name):
+        for strategy in self.strategies:
+            if strategy.get_name() == strategy_name:
+                strategy.disable()
+                return True
+        return False
+
+    def update_strategy_params(self, strategy_name, new_params):
+        for strategy in self.strategies:
+            if strategy.get_name() == strategy_name:
+                strategy.update_params(new_params)
+                return True
+        return False
+
+    def run_strategies(self):
+        for strategy in self.strategies:
+            strategy.execute_strategy()
